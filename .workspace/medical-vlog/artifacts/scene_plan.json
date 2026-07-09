@@ -5,78 +5,81 @@
     {
       "id": "scene_01",
       "type": "talking_head",
-      "description": "Hook: triptans framed as the old, reactive standard with real limits.",
+      "description": "Hook: triptans framed as the old, reactive standard with real limits. Raw, direct-to-camera delivery.",
       "start_seconds": 0.0,
       "end_seconds": 3.8,
       "script_section_id": "hook",
-      "framing": "presenter center frame, medium shot, direct to camera",
+      "framing": "presenter center-near-center frame, medium shot, direct to camera, natural framing (avoid overly staged studio symmetry)",
       "movement": "static",
       "transition_in": "cut",
-      "transition_out": "cross_dissolve",
-      "overlay_notes": "Subtle lower-third icon: old pill bottle / clock, fades in late in the scene to underline 'reactive, with real limits'. No side panel yet — presenter carries the hook alone.",
+      "transition_out": "cut",
+      "overlay_notes": "No graphic. Burned-in captions only, word-synced, with 'reactive' and 'real limits' bolded/emphasized on-screen as the save-worthy keywords. Trend research: direct-to-camera without heavy graphics reads as more credible for medical content than a produced/animated hook.",
       "narrative_role": "establish_context",
       "information_role": "Viewer learns the old standard of care (triptans) is reactive and limited.",
       "hero_moment": false,
       "required_assets": [
-        { "type": "icon", "description": "old pill bottle / clock lower-third icon", "source": "generate" }
+        { "type": "captions", "description": "word-synced burned-in captions, keyword emphasis style", "source": "generate" }
       ]
     },
     {
       "id": "scene_02",
       "type": "talking_head",
-      "description": "CGRP-blocking therapies explained: mechanism, then delivery formats (injectable / oral gepant).",
+      "description": "CGRP-blocking therapies explained: mechanism, then delivery formats (injectable / oral gepant). The single hero graphic moment of the video.",
       "start_seconds": 3.8,
       "end_seconds": 13.5,
       "script_section_id": "value_statement",
-      "framing": "presenter plus side panel (left-third presenter, right two-thirds graphic)",
+      "framing": "presenter plus side panel (left-third presenter, right two-thirds graphic) — the only scene in the cut that breaks from pure direct-to-camera",
       "movement": "static",
-      "transition_in": "cross_dissolve",
+      "transition_in": "cut",
       "transition_out": "cut",
-      "overlay_notes": "Side-panel graphic sequence: CGRP molecule / pathway ribbon diagram appears first (matching 'CGRP-blocking therapies'), then swaps to injector-pen + pill icons side-by-side exactly on the words 'monthly injectables, or daily pills like atogepant'. Diagram style should echo the actinidin-ribbon reference look — clean vector line art, not photoreal.",
+      "overlay_notes": "Side-panel graphic sequence: CGRP molecule/pathway ribbon diagram appears first (matching 'CGRP-blocking therapies'), then swaps to injector-pen + pill icons on 'monthly injectables, or daily pills like atogepant'. Clean vector line art. Burned-in captions continue underneath with 'CGRP' bolded. This is the one deliberate 'produced' beat — reserved for the single most save-worthy/shareable fact, per trend research showing save-worthy tips are what drives shares and search traffic.",
       "narrative_role": "deliver_payload",
       "information_role": "Viewer learns what CGRP-blocking therapy is and how it's delivered (injectable or oral).",
       "hero_moment": true,
       "required_assets": [
         { "type": "diagram", "description": "CGRP molecule/pathway ribbon diagram, vector style", "source": "generate" },
-        { "type": "icon", "description": "injector pen + pill icon pair", "source": "generate" }
+        { "type": "icon", "description": "injector pen + pill icon pair", "source": "generate" },
+        { "type": "captions", "description": "word-synced burned-in captions, keyword emphasis style", "source": "generate" }
       ]
     },
     {
       "id": "scene_03",
       "type": "talking_head",
-      "description": "Non-drug option: wearable neuromodulation devices.",
+      "description": "Non-drug option: wearable neuromodulation devices. Back to raw direct-to-camera.",
       "start_seconds": 13.5,
       "end_seconds": 21.0,
       "script_section_id": "proof_beat_1",
-      "framing": "presenter plus side panel",
+      "framing": "presenter center frame, direct to camera, no side panel",
       "movement": "static",
       "transition_in": "cut",
       "transition_out": "cut",
-      "overlay_notes": "Side-panel illustration: device worn on forehead and device worn on arm, simple line-art style consistent with scene_02's diagram treatment.",
+      "overlay_notes": "No side panel. A single small lower-third icon (device-on-forehead silhouette) appears briefly only on the word 'devices', then clears — light touch, not a sustained graphic. Burned-in captions continue, 'neuromodulation devices' bolded.",
       "narrative_role": "evidence",
       "information_role": "Viewer learns a non-drug, device-based option exists with real clinical results.",
       "hero_moment": false,
       "required_assets": [
-        { "type": "illustration", "description": "forehead-worn and arm-worn neuromodulation device illustration", "source": "generate" }
+        { "type": "icon", "description": "small device-on-forehead silhouette, brief lower-third", "source": "generate" },
+        { "type": "captions", "description": "word-synced burned-in captions, keyword emphasis style", "source": "generate" }
       ]
     },
     {
       "id": "scene_04",
       "type": "talking_head",
-      "description": "Chronic migraine (15+ headache days/month) and Botox as a proven option.",
+      "description": "Chronic migraine (15+ headache days/month) and Botox as a proven option — the second-most save-worthy stat, gets a compact text card.",
       "start_seconds": 21.0,
       "end_seconds": 26.5,
       "script_section_id": "proof_beat_2",
-      "framing": "presenter plus lower-third stat card",
+      "framing": "presenter center frame, direct to camera, no side panel",
       "movement": "static",
       "transition_in": "cut",
       "transition_out": "cut",
-      "overlay_notes": "Lower-third stat card: calendar icon with 15+ days marked, paired with a small Botox vial icon appearing on the word 'Botox'.",
+      "overlay_notes": "No side panel. Compact on-screen text card only: '15+ headache days/month = chronic migraine' pinned briefly, no icon clutter. Burned-in captions continue, 'chronic migraine' and 'Botox' bolded.",
       "narrative_role": "evidence",
       "information_role": "Viewer learns Botox is a proven option specifically for chronic migraine.",
       "hero_moment": false,
       "required_assets": [
-        { "type": "icon", "description": "calendar-with-15-days-marked + Botox vial icon", "source": "generate" }
+        { "type": "text_card", "description": "compact stat card: '15+ headache days/month = chronic migraine'", "source": "generate" },
+        { "type": "captions", "description": "word-synced burned-in captions, keyword emphasis style", "source": "generate" }
       ]
     },
     {
@@ -90,18 +93,22 @@
       "movement": "static",
       "transition_in": "cut",
       "transition_out": "fade_out",
-      "overlay_notes": "No graphic overlay — presenter carries the line alone. Optional end-card CTA (handle / follow prompt) can follow as a separate 2s tag after 29.0s if desired; not included in this cut.",
+      "overlay_notes": "No graphic overlay — presenter carries the line alone. Burned-in captions continue to the last frame. Optional end-card CTA (handle / follow prompt) as a separate 2s tag after 29.0s if desired; not included in this cut.",
       "narrative_role": "call_to_action",
       "information_role": "Viewer takes away that migraine treatment has meaningfully changed.",
       "hero_moment": false,
-      "required_assets": []
+      "required_assets": [
+        { "type": "captions", "description": "word-synced burned-in captions, keyword emphasis style", "source": "generate" }
+      ]
     }
   ],
   "metadata": {
     "aspect_ratio": "9:16",
-    "background_discipline": "single consistent background throughout — presenter's own studio backdrop (dark neutral, warm bokeh lights, wood desk) from the source photo; no background changes between scenes, only side-panel/overlay changes mark section shifts",
+    "background_discipline": "single consistent background throughout — presenter's own studio backdrop (dark neutral, warm bokeh lights, wood desk) from the source photo; no background changes between scenes",
     "avatar_path": "photo_talking_head",
     "narration_source": "tts",
-    "total_duration_seconds": 29.0
+    "total_duration_seconds": 29.0,
+    "trend_analysis_basis": "2026 medical short-form research: provider-led single-question direct-to-camera explainers (30-60s) outperform produced/graphics-heavy cuts; raw presenter-forward delivery reads as more credible than stock-footage-heavy production; save-worthy tips drive shares and search traffic; captions are essential since most viewers watch muted. Applied by: reducing side-panel graphics from every beat to one hero moment (scene_02), switching remaining beats to direct-to-camera with captions as the primary overlay, and adding a compact save-worthy stat card at scene_04.",
+    "captions_policy": "always-on, word-synced, burned-in captions across all 5 scenes with per-scene keyword emphasis (bold on save-worthy terms) — added specifically because the reference fruit-facts reel did not need this but medical trust content does."
   }
 }
