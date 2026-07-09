@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "style_playbook": "clean-professional",
+  "scenes": [
+    {
+      "id": "scene_01",
+      "type": "talking_head",
+      "description": "Hook: triptans framed as the old, reactive standard with real limits.",
+      "start_seconds": 0.0,
+      "end_seconds": 3.8,
+      "script_section_id": "hook",
+      "framing": "presenter center frame, medium shot, direct to camera",
+      "movement": "static",
+      "transition_in": "cut",
+      "transition_out": "cross_dissolve",
+      "overlay_notes": "Subtle lower-third icon: old pill bottle / clock, fades in late in the scene to underline 'reactive, with real limits'. No side panel yet — presenter carries the hook alone.",
+      "narrative_role": "establish_context",
+      "information_role": "Viewer learns the old standard of care (triptans) is reactive and limited.",
+      "hero_moment": false,
+      "required_assets": [
+        { "type": "icon", "description": "old pill bottle / clock lower-third icon", "source": "generate" }
+      ]
+    },
+    {
+      "id": "scene_02",
+      "type": "talking_head",
+      "description": "CGRP-blocking therapies explained: mechanism, then delivery formats (injectable / oral gepant).",
+      "start_seconds": 3.8,
+      "end_seconds": 13.5,
+      "script_section_id": "value_statement",
+      "framing": "presenter plus side panel (left-third presenter, right two-thirds graphic)",
+      "movement": "static",
+      "transition_in": "cross_dissolve",
+      "transition_out": "cut",
+      "overlay_notes": "Side-panel graphic sequence: CGRP molecule / pathway ribbon diagram appears first (matching 'CGRP-blocking therapies'), then swaps to injector-pen + pill icons side-by-side exactly on the words 'monthly injectables, or daily pills like atogepant'. Diagram style should echo the actinidin-ribbon reference look — clean vector line art, not photoreal.",
+      "narrative_role": "deliver_payload",
+      "information_role": "Viewer learns what CGRP-blocking therapy is and how it's delivered (injectable or oral).",
+      "hero_moment": true,
+      "required_assets": [
+        { "type": "diagram", "description": "CGRP molecule/pathway ribbon diagram, vector style", "source": "generate" },
+        { "type": "icon", "description": "injector pen + pill icon pair", "source": "generate" }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "type": "talking_head",
+      "description": "Non-drug option: wearable neuromodulation devices.",
+      "start_seconds": 13.5,
+      "end_seconds": 21.0,
+      "script_section_id": "proof_beat_1",
+      "framing": "presenter plus side panel",
+      "movement": "static",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "overlay_notes": "Side-panel illustration: device worn on forehead and device worn on arm, simple line-art style consistent with scene_02's diagram treatment.",
+      "narrative_role": "evidence",
+      "information_role": "Viewer learns a non-drug, device-based option exists with real clinical results.",
+      "hero_moment": false,
+      "required_assets": [
+        { "type": "illustration", "description": "forehead-worn and arm-worn neuromodulation device illustration", "source": "generate" }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "type": "talking_head",
+      "description": "Chronic migraine (15+ headache days/month) and Botox as a proven option.",
+      "start_seconds": 21.0,
+      "end_seconds": 26.5,
+      "script_section_id": "proof_beat_2",
+      "framing": "presenter plus lower-third stat card",
+      "movement": "static",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "overlay_notes": "Lower-third stat card: calendar icon with 15+ days marked, paired with a small Botox vial icon appearing on the word 'Botox'.",
+      "narrative_role": "evidence",
+      "information_role": "Viewer learns Botox is a proven option specifically for chronic migraine.",
+      "hero_moment": false,
+      "required_assets": [
+        { "type": "icon", "description": "calendar-with-15-days-marked + Botox vial icon", "source": "generate" }
+      ]
+    },
+    {
+      "id": "scene_05",
+      "type": "talking_head",
+      "description": "Closing line, presenter alone, direct address.",
+      "start_seconds": 26.5,
+      "end_seconds": 29.0,
+      "script_section_id": "cta",
+      "framing": "presenter center frame, close-up, no side panel",
+      "movement": "static",
+      "transition_in": "cut",
+      "transition_out": "fade_out",
+      "overlay_notes": "No graphic overlay — presenter carries the line alone. Optional end-card CTA (handle / follow prompt) can follow as a separate 2s tag after 29.0s if desired; not included in this cut.",
+      "narrative_role": "call_to_action",
+      "information_role": "Viewer takes away that migraine treatment has meaningfully changed.",
+      "hero_moment": false,
+      "required_assets": []
+    }
+  ],
+  "metadata": {
+    "aspect_ratio": "9:16",
+    "background_discipline": "single consistent background throughout — presenter's own studio backdrop (dark neutral, warm bokeh lights, wood desk) from the source photo; no background changes between scenes, only side-panel/overlay changes mark section shifts",
+    "avatar_path": "photo_talking_head",
+    "narration_source": "tts",
+    "total_duration_seconds": 29.0
+  }
+}
