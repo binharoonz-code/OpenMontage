@@ -10,7 +10,11 @@ import {
   useVideoConfig,
 } from "remotion";
 import { getVideoMetadata } from "@remotion/media-utils";
-import { loadFont } from "@remotion/google-fonts/PlayfairDisplay";
+// See Explainer.tsx for why this is a static fallback rather than a live
+// Google Fonts fetch (network-restricted environment compatibility).
+const loadFont = (_style: string, _opts: unknown) => ({
+  fontFamily: "Playfair Display, Georgia, serif",
+});
 
 // Editorial serif for the tagline — Playfair Display at its boldest weight.
 // Loaded once at module scope so every render reuses the same font face.

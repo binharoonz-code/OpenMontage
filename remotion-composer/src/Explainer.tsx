@@ -10,7 +10,15 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
+// NOTE: @remotion/google-fonts/SpaceGrotesk normally fetches its webfont from
+// fonts.gstatic.com at render time inside the headless browser. In network-
+// restricted environments where that fetch can't complete with a trusted
+// cert, the failed fetch aborts the whole render (not just a font fallback).
+// Swapping to a static system-font fallback removes that hard network
+// dependency; only the exact glyph shape changes, everything else renders.
+const loadFont = (_style: string, _opts: unknown) => ({
+  fontFamily: "Space Grotesk, Arial, sans-serif",
+});
 
 // Resolve asset path — handle URLs, absolute paths (Windows/Unix), and public/ relative paths
 function resolveAsset(src: string): string {
