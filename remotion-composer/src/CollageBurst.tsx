@@ -11,7 +11,11 @@ import {
   useVideoConfig,
 } from "remotion";
 import React from "react";
-import { loadFont as loadPlayfair } from "@remotion/google-fonts/PlayfairDisplay";
+// See Explainer.tsx for why this is a static fallback rather than a live
+// Google Fonts fetch (network-restricted environment compatibility).
+const loadPlayfair = (_style: string, _opts: unknown) => ({
+  fontFamily: "Playfair Display, Georgia, serif",
+});
 
 const { fontFamily: playfairFamily } = loadPlayfair("normal", {
   weights: ["400", "700"],

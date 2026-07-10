@@ -1,5 +1,9 @@
 import React from "react";
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
+// See Explainer.tsx for why this is a static fallback rather than a live
+// Google Fonts fetch (network-restricted environment compatibility).
+const loadFont = (_style: string, _opts: unknown) => ({
+  fontFamily: "Space Grotesk, Arial, sans-serif",
+});
 import {
   AbsoluteFill,
   Audio,
